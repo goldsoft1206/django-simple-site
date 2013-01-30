@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>Profile Page</h1>
+
+<form action="{% url check_qa %}" method="POST">
+    {% csrf_token %}
+    <p>Question: {{ question }} </p>
+    <input type="text" name="answer"/>
+    <input type="submit" value="Check"/>
+</form>
+
+You can <a href="{% url userena_signout %}">Logout</a>
+</body>
+</html>

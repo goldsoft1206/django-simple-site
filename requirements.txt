@@ -1,0 +1,4 @@
+Django==1.4.2
+South==0.7.6
+django-userena==1.1.2
+PIL

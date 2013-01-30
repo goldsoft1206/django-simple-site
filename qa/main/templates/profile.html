@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>Profile Page</h1>
+
+<form action="{% url save_profile %}" method="POST">
+    {% csrf_token %}
+    <p>Question</p><input type="text" name="question"/>
+    <p>Answer</p><input type="text" name="answer"/>
+    <input type="submit" value="Save"/>
+</form>
+</body>
+</html>
